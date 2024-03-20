@@ -2,20 +2,18 @@ lexer grammar CSharpRoutineLexer;
 
 // Keywords
 TYPE_BOOLEAN: 'bool';
-TYPE_CHAR: 'char';           // 16 bits
-TYPE_FLOAT_DEFAULT: 'float'; // 32 bits
-TYPE_FLOAT32: 'float32';
-TYPE_FLOAT64: 'float64';
-TYPE_INT_DEFAULT: 'int'; // 32 bits
-TYPE_INT8: 'int8';
-TYPE_INT16: 'int16';
-TYPE_INT32: 'int32';
-TYPE_INT64: 'int64';
-TYPE_UINT_DEFAULT: 'uint'; // 32 bits
-TYPE_UINT8: 'uint8';
-TYPE_UINT16: 'uint16';
-TYPE_UINT32: 'uint32';
-TYPE_UINT64: 'uint64';
+TYPE_CHAR: 'char';
+TYPE_FLOAT32: 'float';
+TYPE_FLOAT64: 'double';
+TYPE_FLOAT128: 'decimal';
+TYPE_INT8: 'sbyte';
+TYPE_INT16: 'short';
+TYPE_INT32: 'int';
+TYPE_INT64: 'long';
+TYPE_UINT8: 'byte';
+TYPE_UINT16: 'ushort';
+TYPE_UINT32: 'uint';
+TYPE_UINT64: 'ulong';
 TYPE_STRING: 'string'; // 16 bits per character
 
 NODE: '@node';

@@ -1,0 +1,25 @@
+<-
+    Debug.Log("Done");
+-Done>
+
+<Done-
+    Debug.Log("Bunzo");
+-Bunzo>
+
+<Bunzo-
+    Debug.Log("C1");
+    Helpers.TestNode(@node);
+-C1>
+
+<Bunzo-
+    uint ctx = 10;
+    string seq = "yes";
+    Debug.Log("C2");
+    Helpers.TestLease(@lease, 2000);
+    Debug.Log(seq);
+    Debug.Log(ctx);
+-C2>
+
+<C1,C2-
+    Debug.Log("FINISHED");
+->
