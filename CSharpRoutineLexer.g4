@@ -19,7 +19,7 @@ TYPE_UINT64: 'uint64';
 TYPE_STRING: 'string'; // 16 bits per character
 
 NODE: '@node';
-LESSOR: '@lessor';
+LEASE: '@lease';
 
 BREAK: 'break';     // used for switch
 CASE: 'case';       // used for switch

@@ -162,5 +162,5 @@ literal
     | STRING_LITERAL
     | NULL_LITERAL
     | NODE
-    | LESSOR
+    | LEASE
 ;
