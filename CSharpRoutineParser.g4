@@ -55,6 +55,7 @@ break_statement: BREAK SEMI;
 
 // Expression
 expression_list: expression (COMMA expression)*;
+
 // Primary
 expression
     : name                                      # expression_primary_name
@@ -146,7 +147,7 @@ primitive_type
 ;
 
 // Name
-name: IDENTIFIER (DOT IDENTIFIER)*;
+name: (IDENTIFIER | NODE | LEASE) (DOT IDENTIFIER)*;
 
 // Flags 
 flag_list: IDENTIFIER (COMMA IDENTIFIER)*;
@@ -159,6 +160,4 @@ literal
     | CHARACTER_LITERAL
     | STRING_LITERAL
     | NULL_LITERAL
-    | NODE
-    | LEASE
 ;

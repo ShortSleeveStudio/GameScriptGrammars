@@ -136,7 +136,7 @@ MOD: '%';
 TERNARY: '?';
 
 // Identifiers
-/* Order affects precedence IDENTFIER must come last. */
+/* Order affects precedence IDENTIFIER must come last. */
 IDENTIFIER: Letter LetterOrDigit*;
 
 fragment LetterOrDigit: Letter | Digit;
