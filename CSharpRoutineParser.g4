@@ -48,7 +48,7 @@ switch_label
 // Declaration Statement
 declaration_statement: type declarator_init SEMI;
 declarator_init: declarator (ASSIGN expression)?;
-declarator: IDENTIFIER;
+declarator: normal_name;
 
 // Break Statement
 break_statement: BREAK SEMI;
@@ -147,7 +147,13 @@ primitive_type
 ;
 
 // Name
-name: (IDENTIFIER | NODE | LEASE) (DOT IDENTIFIER)*;
+name: (normal_name | special_name) (DOT IDENTIFIER)*;
+
+// Normal Name
+normal_name: IDENTIFIER;
+
+// Special Name
+special_name: NODE | LEASE;
 
 // Flags 
 flag_list: IDENTIFIER (COMMA IDENTIFIER)*;
